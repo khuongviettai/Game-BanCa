@@ -39,6 +39,7 @@ body, html{height: 100%;}
 </head>
 
 <body>
+	<audio id="my-audio" src="./music/music.mp3" autoplay loop ></audio>
 
 <div id="outer">
 	<div id="middle">
@@ -50,7 +51,7 @@ body, html{height: 100%;}
 <div id="fps" style="position:absolute;top:0;left:0;color:#fff;"></div>
 <div style="position:absolute;top:0;left:0;color:#fff; margin-top: 20px;">Code by "Khuong Viet Tai"</div>
 <a href="mailto:khuongtai789@gmail.com" style="position:absolute;top:0;left:0;color:#FF0000; margin-top: 40px;">khuongtai789@gmail.com</a>
-<audio src="./music/music.mp3" autoplay loop ></audio>
+
 </body>
 
 <script>
@@ -64,6 +65,12 @@ document.addEventListener("keydown", function(e) {
 }, false);
 
 </script>
+<script>
+	const audio = document.getElementById('my-audio');
+	document.addEventListener('click', () => {
+	  audio.play();
+	});
+  </script>
 </html>
 
 
